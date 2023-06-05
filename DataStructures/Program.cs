@@ -1,4 +1,6 @@
-﻿namespace DataStructures
+﻿using System.Collections;
+
+namespace DataStructures
 {
     internal class Program
     {
@@ -14,7 +16,7 @@
 
             list.AddLast(thirdNode);
             list.AddLast(fourthNode);
-            list.AddLast(firstNode); 
+            list.AddLast(firstNode);
             list.AddLast(fifthNode);
 
             list.AddAfter(fourthNode, secondNode);
@@ -28,6 +30,16 @@
 
             list.DeleteAfter(secondNode);
             list.Display();
+
+            CustomStack<int> stackList = new CustomStack<int>();
+            stackList.Push(21);
+            stackList.Push(45);
+            stackList.Push(37);
+            stackList.Push(19);
+            stackList.Push(56);
+
+            stackList.Print();
+
         }
     }
 }
