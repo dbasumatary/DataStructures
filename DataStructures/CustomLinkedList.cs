@@ -35,6 +35,23 @@ namespace DataStructures
             newNode.Next = previous;
         }
 
+        //UC2-Add last method in linked list
+        public void AddLast(Node<T> newNode)
+        {
+            if (head == null)
+            {
+                head = newNode;
+                return;
+            }
+            Node<T> temp = head;
+
+            while (temp.Next != null)
+            {
+                temp = temp.Next;
+            }
+            temp.Next = newNode;
+        }
+
         public void Display()
         {
             Node<T> temp = head;

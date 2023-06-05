@@ -12,11 +12,11 @@
             Node<int> fourthNode = new Node<int>(15);
             Node<int> fifthNode = new Node<int>(42);
 
-            list.AddFirst(firstNode);
-            list.AddFirst(secondNode);
-            list.AddFirst(thirdNode);
-            list.AddFirst(fourthNode);
-            list.AddFirst(fifthNode);
+            list.AddLast(thirdNode);
+            list.AddLast(fourthNode);
+            list.AddLast(firstNode); 
+            list.AddLast(secondNode);
+            list.AddLast(fifthNode);
 
             list.Display();
         }
