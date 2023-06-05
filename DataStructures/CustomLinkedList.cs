@@ -75,6 +75,18 @@ namespace DataStructures
             head = temp;
         }
 
+        //UC5-Delete last method in linked list
+        public void DeleteLast()
+        {
+            Node<T> temp = head;
+            while (temp.Next.Next != null)
+            {
+                temp = temp.Next;
+            }
+
+            temp.Next = null;
+        }
+
         public void Display()
         {
             Node<T> temp = head;

@@ -20,6 +20,7 @@
             list.AddAfter(fourthNode, secondNode);
 
             list.DeleteFirst();
+            list.DeleteLast();
             list.Display();
         }
     }
