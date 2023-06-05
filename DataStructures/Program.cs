@@ -15,8 +15,9 @@
             list.AddLast(thirdNode);
             list.AddLast(fourthNode);
             list.AddLast(firstNode); 
-            list.AddLast(secondNode);
             list.AddLast(fifthNode);
+
+            list.AddAfter(fourthNode, secondNode);
 
             list.Display();
         }

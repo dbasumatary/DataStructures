@@ -52,6 +52,19 @@ namespace DataStructures
             temp.Next = newNode;
         }
 
+        //UC3-Add after method in linked list
+        public void AddAfter(Node<T> data, Node<T> newNode)
+        {
+            Node<T> temp = data;
+            while (temp.Next == null)
+            {
+                temp.Next = newNode;
+                return;
+            }
+            newNode.Next = temp.Next;
+            temp.Next = newNode;
+        }
+
         public void Display()
         {
             Node<T> temp = head;
