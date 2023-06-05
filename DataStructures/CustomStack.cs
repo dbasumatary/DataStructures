@@ -18,6 +18,12 @@ namespace DataStructures
             linkedList.AddLast(newNode);
         }
 
+        //UC8-Stack pop method
+        public void Pop()
+        {
+            linkedList.DeleteLast();
+        }
+
         public void Print()
         {
             linkedList.Display();

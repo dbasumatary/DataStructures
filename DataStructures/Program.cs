@@ -38,6 +38,7 @@ namespace DataStructures
             stackList.Push(19);
             stackList.Push(56);
 
+            stackList.Pop();   
             stackList.Print();
 
         }

@@ -78,6 +78,14 @@ namespace DataStructures
         //UC5-Delete last method in linked list
         public void DeleteLast()
         {
+            if (head == null)
+                return;
+            if(head.Next == null)
+            {
+                head = null;
+                return;
+            }
+
             Node<T> temp = head;
             while (temp.Next.Next != null)
             {
