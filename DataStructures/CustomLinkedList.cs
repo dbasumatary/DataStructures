@@ -87,6 +87,13 @@ namespace DataStructures
             temp.Next = null;
         }
 
+        //UC6-Delete after method in linked list
+        public void DeleteAfter(Node<T> node)
+        {
+            Node<T> temp = node.Next;
+            node.Next = temp.Next;
+        }
+
         public void Display()
         {
             Node<T> temp = head;

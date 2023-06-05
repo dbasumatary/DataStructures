@@ -18,9 +18,15 @@
             list.AddLast(fifthNode);
 
             list.AddAfter(fourthNode, secondNode);
+            list.Display();
 
             list.DeleteFirst();
+            list.Display();
+
             list.DeleteLast();
+            list.Display();
+
+            list.DeleteAfter(secondNode);
             list.Display();
         }
     }
