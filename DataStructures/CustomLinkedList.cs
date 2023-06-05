@@ -65,6 +65,16 @@ namespace DataStructures
             temp.Next = newNode;
         }
 
+        //UC4-Delete first method in linked list
+        public void DeleteFirst()
+        {
+            if (head == null)
+                return;
+            
+            Node<T> temp = head.Next;
+            head = temp;
+        }
+
         public void Display()
         {
             Node<T> temp = head;

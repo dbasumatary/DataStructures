@@ -19,6 +19,7 @@
 
             list.AddAfter(fourthNode, secondNode);
 
+            list.DeleteFirst();
             list.Display();
         }
     }
