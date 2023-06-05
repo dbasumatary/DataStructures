@@ -41,6 +41,13 @@ namespace DataStructures
             stackList.Pop();   
             stackList.Print();
 
+            CustomQueue<int> queueList = new CustomQueue<int>();
+            queueList.Enqueue(21);
+            queueList.Enqueue(34);
+            queueList.Enqueue(28);
+
+            queueList.Dequeue();
+            queueList.Print();
         }
     }
 }
